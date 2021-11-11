@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Formulario</title>
+	<script src="formulario.js"></script>
+	<style>
+		h1{color:darkblue; text-align:center;}
+		hr{color:darkgray; width: 70%; border-width:6px;}
+		label{color:#228B22;}
+		.formulario{margin-top:30px; padding: 20px; box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);}
+		h6{color:gray;}
+		footer{color:#B95ED6; }
+	</style>
+</head>
+<body>
+	<h1>Test Escolar</h1><hr>
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+
+			<h2 style="text-align:center; color:#FF7F50">Preguntas de cultura general</h2>
+			<h3 style="text-align: right; color: red">Calificación:</h3>
+			<br>
+			<form class="formulario" method="GET" action="formulario.php">
+				<h5 style="box-sizing: border-box;">
+				<label for="nombre">Nombre Completo:</label>
+				<input type="text" name="nombre" placeholder="Nombre completo" required style="width: 500px"><br><br>
+
+				<label for="p1">1. ¿Naranja es el color o la fruta?</label><br>
+				
+				<input type="radio" name="p1" value="Fruta"> Fruta<br> <!-- correcta -->
+				<input type="radio" name="p1" value="Color"> Color<br>
+				<input type="radio" name="p1" value="Ambas"> Ambas<br><br>
+
+				<label for="p2">2. ¿Quine invento el telescopio?</label><br>
+				<input type="radio" name="p2" value="Fernando Rivera"> Fernando Rivera<br>
+				<input type="radio" name="p2" value="Oliver Tunés"> Oliver Tunés<br>
+				<input type="radio" name="p2" value="Hans Lippershey"> Hans Lippershey<br><br> <!-- correcta -->
+
+				<label for="p3">3. ¿Cuantas veces parpadea una persona en una semana?</label><br>
+				<input type="radio" name="p3" value="2,000"> 2,000 veces<br>
+				<input type="radio" name="p3" value="25,000"> 25,000 veces<br> <!-- correcta -->
+				<input type="radio" name="p3" value="100,000"> 100,000 veces<br><br>
+
+				<label for="p4">4. Programar es aprender a </label>  <input type="text" name="p4" required style="width:120px">. <br><h6>(escribir sin espacios ni caracteres especiales)</h6><br><h5>
+
+				<label for="p5">5. El 16 de Julio de </label> <input type="text" name="p5" required style="width:80px"> <label> el hombre llego por primera vez a la luna.</label><h6>(escribir sin espacios ni caracteres especiales)</h6><br><br><h5>
+
+				<label for="p6">6. El rio </label> <input type="text" name="p6" required style="width:100px"> <label for="">es el rio más largo del mundo, este se encuentra en Afríca.</label><h6>(escribir sin espacios ni caracteres especiales)</h6><h5><br><br>
+
+				<label for="p7">7. Estos son 2 de los sabores primarios.</label><br>
+				<input type="checkbox" name="p7[]" value="Dulce"> Dulce <br> <!-- correcta -->
+				<input type="checkbox" name="p7[]" value="Enchiloso"> Enchiloso <br>
+				<input type="checkbox" name="p7[]" value="Umami"> Umami <br><br> <!-- correcta -->
+
+				<label for="p8">8. Se consideran lenguajes de programación.</label><br>
+				<input type="checkbox" name="p8[]" value="Java"> Java <br> <!-- correcta -->
+				<input type="checkbox" name="p8[]" value="C++"> C++ <br> <!-- correcta -->
+				<input type="checkbox" name="p8[]" value="HTML"> HTML <br><br>
+
+				<label for="p9">9. Son energias renovables.</label><br>
+				<input type="checkbox" name="p9[]" value="Solar"> Solar <br> <!-- correcta -->
+				<input type="checkbox" name="p9[]" value="Gas"> Quema de gas natural <br>
+				<input type="checkbox" name="p9[]" value="Eolica"> Eolica <br><br> <!-- correcta -->
+
+				<label for="p10">10. ¿En que fecha es Navidad de 2021?</label><br>
+				<input type="date" name="p10"><br><br>
+
+				</h5>
+				<input type="submit" value="Enviar" style="color:blue;background-color:lightblue; width:80px; height:40px;"><br><br>
+			</form><br><br>
+		</div>
+	</div>
+	
+	<footer><b> - Alex Fernando Bojórquez Rojas 5AVP - </b></footer>
+</body>
+</html>
